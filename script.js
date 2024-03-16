@@ -28,9 +28,7 @@ function drop(event) {
 
 // Add event listeners to draggable elements and assign IDs dynamically
 const draggableElements = document.querySelectorAll('.image');
-draggableElements.forEach((element, index) => {
-    // Add an ID to each element dynamically (div1, div2, ...)
-    element.id = 'div' + (index + 1);
+draggableElements.forEach((element) => {
     element.addEventListener('dragstart', dragStart);
     element.addEventListener('dragover', dragOver);
     element.addEventListener('drop', drop);
